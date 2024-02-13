@@ -1,5 +1,3 @@
-// models.js
-
 import { Sequelize, DataTypes } from "sequelize";
 import { sequelize } from "./db.js";
 
@@ -15,22 +13,6 @@ const Forecast = sequelize.define("Forecast", {
   cnt: {
     type: DataTypes.INTEGER,
     allowNull: false,
-  },
-  appid: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  mode: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
-  units: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
-  lang: {
-    type: DataTypes.STRING,
-    allowNull: true,
   },
   date: {
     type: DataTypes.DATE,
